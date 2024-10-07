@@ -8,7 +8,7 @@ SELECT
     p.building,
     st_transform(p.way, 4326) AS geom
 FROM
-    public.planet_osm_polygon AS p
+    public.planet_os AS p
 WHERE 
     p."addr:street" IS NOT NULL
     AND p."addr:city" = 'Zürich'
